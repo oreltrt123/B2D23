@@ -1,0 +1,14 @@
+{
+  "node": {
+    "b9abb214c1d81eb4fcb1a57e2ca2d748da3cbd75": {
+      "workers": {
+        "app/page": "[project]/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/app/actions/validate-email.ts [app-rsc] (ecmascript, action, ecmascript)\" } [app-rsc] (ecmascript)"
+      },
+      "layer": {
+        "app/page": "actionBrowser"
+      }
+    }
+  },
+  "edge": {},
+  "encryptionKey": "NALEFN4XgX8O2/lFzVywMbK3Si46D5EaoZeoc/mmIJw="
+}

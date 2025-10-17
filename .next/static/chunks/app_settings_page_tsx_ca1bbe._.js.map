@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 5, "column": 0}, "map": {"version":3,"sources":["/turbopack/[project]/app/settings/page.tsx"],"sourcesContent":["'use client'\r\n\r\nimport { useEffect } from 'react'\r\nimport { useRouter } from 'next/navigation'\r\n\r\nexport default function SettingsPage() {\r\n  const router = useRouter()\r\n\r\n  useEffect(() => {\r\n    router.replace('/settings/profile')\r\n  }, [router])\r\n\r\n  return null\r\n}"],"names":[],"mappings":";;;;;;;AAAA;;;AAKe,SAAS;;IACtB,MAAM,SAAS,CAAA,GAAA,qIAAA,CAAA,YAAS,AAAD;IAEvB,CAAA,GAAA,6JAAA,CAAA,YAAS,AAAD,EAAE;QACR,OAAO,OAAO,CAAC;IACjB,GAAG;QAAC;KAAO;IAEX,OAAO;AACT;GARwB;;QACP,qIAAA,CAAA,YAAS;;;KADF"}},
+    {"offset": {"line": 33, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}

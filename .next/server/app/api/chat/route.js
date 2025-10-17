@@ -1,0 +1,18 @@
+const CHUNK_PUBLIC_PATH = "server/app/api/chat/route.js";
+const runtime = require("../../../chunks/[turbopack]_runtime.js");
+runtime.loadChunk("server/chunks/node_modules_next_dist_cd653f._.js");
+runtime.loadChunk("server/chunks/node_modules_zod_v3_074dc8._.js");
+runtime.loadChunk("server/chunks/node_modules_zod_v4_7ad84a._.js");
+runtime.loadChunk("server/chunks/node_modules_b33d6b._.js");
+runtime.loadChunk("server/chunks/node_modules_@ai-sdk_anthropic_dist_index_mjs_e7277a._.js");
+runtime.loadChunk("server/chunks/node_modules_@ai-sdk_google_dist_ac8ae2._.js");
+runtime.loadChunk("server/chunks/node_modules_tr46_816df9._.js");
+runtime.loadChunk("server/chunks/node_modules_bignumber_js_bignumber_9a767a.js");
+runtime.loadChunk("server/chunks/node_modules_google-auth-library_78e0d5._.js");
+runtime.loadChunk("server/chunks/node_modules_@ai-sdk_openai_dist_index_mjs_10b530._.js");
+runtime.loadChunk("server/chunks/node_modules_@upstash_redis_70011b._.js");
+runtime.loadChunk("server/chunks/node_modules_ai_dist_index_mjs_1ce7e4._.js");
+runtime.loadChunk("server/chunks/node_modules_918487._.js");
+runtime.loadChunk("server/chunks/_3ff85b._.js");
+runtime.loadChunk("server/chunks/node_modules_@vercel_oidc_dist_a32a07._.js");
+module.exports = runtime.getOrInstantiateRuntimeModule("[project]/node_modules/next/dist/esm/build/templates/app-route.js { INNER_APP_ROUTE => \"[project]/app/api/chat/route.ts [app-route] (ecmascript)\" } [app-route] (ecmascript)", CHUNK_PUBLIC_PATH).exports;
