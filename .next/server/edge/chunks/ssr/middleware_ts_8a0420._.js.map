@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 5, "column": 0}, "map": {"version":3,"sources":["/turbopack/[project]/middleware.ts"],"sourcesContent":["import { kv } from '@vercel/kv'\nimport { NextResponse } from 'next/server'\nimport type { NextRequest } from 'next/server'\n\nexport async function middleware(req: NextRequest) {\n  if (process.env.KV_REST_API_URL && process.env.KV_REST_API_TOKEN) {\n    const id = req.nextUrl.pathname.split('/').pop()\n    const url = await kv.get(`fragment:${id}`)\n\n    if (url) {\n      return NextResponse.redirect(url as string)\n    } else {\n      return NextResponse.redirect(new URL('/', req.url))\n    }\n  }\n\n  return NextResponse.redirect(new URL('/', req.url))\n}\n\nexport const config = {\n  matcher: '/s/:path*',\n}"],"names":[],"mappings":";;;;;;;;;;AAIO,eAAe,WAAW,GAAgB;IAC/C,IAAI,QAAQ,GAAG,CAAC,eAAe,IAAI,QAAQ,GAAG,CAAC,iBAAiB,EAAE;QAChE,MAAM,KAAK,IAAI,OAAO,CAAC,QAAQ,CAAC,KAAK,CAAC,KAAK,GAAG;QAC9C,MAAM,MAAM,MAAM,+IAAA,CAAA,KAAE,CAAC,GAAG,CAAC,CAAC,SAAS,EAAE,GAAG,CAAC;QAEzC,IAAI,KAAK;YACP,OAAO,qLAAA,CAAA,eAAY,CAAC,QAAQ,CAAC;QAC/B,OAAO;YACL,OAAO,qLAAA,CAAA,eAAY,CAAC,QAAQ,CAAC,IAAI,IAAI,KAAK,IAAI,GAAG;QACnD;IACF;IAEA,OAAO,qLAAA,CAAA,eAAY,CAAC,QAAQ,CAAC,IAAI,IAAI,KAAK,IAAI,GAAG;AACnD;AAEO,MAAM,SAAS;IACpB,SAAS;AACX"}},
-    {"offset": {"line": 30, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
-}
